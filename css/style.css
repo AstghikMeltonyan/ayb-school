@@ -1,0 +1,176 @@
+html {
+  box-sizing: border-box;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+:root {
+  --blue: rgb(0, 0, 60);
+}
+
+/* Header */
+.header {
+  min-height: 140px;
+  background: var(--blue);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.logo__img {
+  width: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav {
+  width: 40%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.contaeiner {
+  max-width: 1600px;
+  height: 100vh;
+  padding: 50px;
+}
+
+.title {
+  min-height: 100px;
+  margin: 0;
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+  color: var(--blue);
+}
+
+.area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.game {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.game__item {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.game__item:hover {
+  box-shadow: .5px 0 .5px .5px rgba(255, 255, 255, 0.3)
+}
+
+.game-1 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: rgb(202, 16, 16);
+}
+
+.game-2 {
+  position: absolute;
+  top: 160px;
+  left: 140px;
+  background: rgb(44, 0, 165);
+}
+
+.game-3 {
+  position: absolute;
+  top: 20px;
+  left: 260px;
+  background: rgb(220, 140, 2);
+}
+
+.game-4 {
+  position: absolute;
+  top: 160px;
+  left: 400px;
+  background: rgb(202, 16, 16);
+}
+
+/* About */
+.about {
+  min-height: 200px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: var(--blue);
+}
+
+.about__text {
+  margin: 0;
+  width: 60%;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--blue);
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  min-height: 80px;
+  background: var(--blue);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+.contact__link:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact__span {
+  color: rgba(253, 253, 253, 0.6);
+}
