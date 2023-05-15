@@ -56,9 +56,10 @@ a {
   margin-right: 20px;
 }
 
+/* Hero */
+
 .contaeiner {
   max-width: 1600px;
-  height: 100vh;
   padding: 50px;
 }
 
@@ -75,7 +76,7 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 100px;
+  min-height: 450px;
   flex-wrap: wrap;
   padding: 20px;
 }
@@ -163,8 +164,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-top: 30px;
-  padding-right: 20px;
+  padding: 30px 20px 20px 20px;
 }
 
 .contact__link:not(:last-child) {
@@ -173,4 +173,90 @@ a {
 
 .contact__span {
   color: rgba(253, 253, 253, 0.6);
+}
+
+@media (max-width: 1024px) {
+
+  .header {
+    width: 100%;
+  }
+
+  .contaeiner {
+   width: 80%;
+   overflow: hidden;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .about__text {
+    width: 100%;
+  }
+ 
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+    width: 70%;
+  }
+
+  .area {
+    min-height: 600px;
+  }
+
+  .title {
+    min-height: 40px;
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  .game-3 {
+    top: 320px;
+    left: 0;
+  }
+
+  .game-4 {
+    top: 480px;
+    left: 140px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .nav-item {
+    font-size: 16px;
+  }
+
+  .contaeiner {
+    padding: 20px;
+  }
+
+  .area {
+    min-height: 650px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+  
+  .game:nth-child(2n) {
+    left: 50px;
+  }
+
+  .about__title {
+    font-size: 20px;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+  
 }
