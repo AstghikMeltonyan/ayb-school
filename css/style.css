@@ -32,9 +32,8 @@ a {
 
 .logo__img {
   width: 50%;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 
 .nav {
@@ -94,10 +93,11 @@ a {
 .game__item {
   padding: 10px 20px;
   border-radius: 20px;
+  box-shadow: .5px 0 .5px .5px rgba(255, 255, 255, 0.3)
 }
 
 .game__item:hover {
-  box-shadow: .5px 0 .5px .5px rgba(255, 255, 255, 0.3)
+  box-shadow: 1px .5px 1px .8px rgba(0, 0, 0, 0.3);
 }
 
 .game-1 {
