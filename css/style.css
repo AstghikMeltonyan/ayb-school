@@ -10,7 +10,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffffef;
 }
 
 :root {
@@ -57,10 +57,14 @@ a {
 }
 
 /* Hero */
+.main {
+  min-height: 100vh;
+  margin-bottom: 40px;
+  padding: 60px 50px;
+}
 
 .contaeiner {
   max-width: 1600px;
-  padding: 50px;
 }
 
 .title {
@@ -85,8 +89,8 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 220px;
   border-radius: 25px;
   text-align: center;
   font-size: 24px;
@@ -94,50 +98,58 @@ a {
 }
 
 .game__item {
-  max-width: 150px;
-  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
   padding: 10px 20px;
   border-radius: 20px;
-  box-shadow: .5px 0 .5px .5px rgba(255, 255, 255, 0.3)
 }
 
-.game__item:hover {
-  box-shadow: 1px .5px 1px .8px rgba(0, 0, 0, 0.3);
+.game:hover {
+  opacity: .7;
 }
 
-.game-1 {
+.game-0 {
   position: absolute;
   top: 20px;
   left: 0;
   background: rgb(202, 16, 16);
 }
 
-.game-2 {
+.game-1 {
   position: absolute;
   top: 160px;
-  left: 140px;
+  left: 200px;
   background: rgb(44, 0, 165);
+}
+
+.game-2 {
+  position: absolute;
+  top: 20px;
+  left: 400px;
+  background: rgb(220, 140, 2);
 }
 
 .game-3 {
   position: absolute;
-  top: 20px;
-  left: 260px;
-  background: rgb(220, 140, 2);
+  top: 160px;
+  left: 600px;
+  background: rgb(202, 16, 16);
 }
 
 .game-4 {
   position: absolute;
-  top: 160px;
-  left: 400px;
-  background: rgb(202, 16, 16);
+  top: 20px;
+  left: 800px;
+  background: rgb(44, 0, 165);
 }
 
 /* About */
 .about {
   min-height: 200px;
   margin-bottom: 40px;
-  padding: 20px;
 }
 
 .about__title {
